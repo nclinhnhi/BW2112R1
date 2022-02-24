@@ -1,0 +1,24 @@
+/* Áp dụng cho các thẻ p */
+p {
+    background-color: cornflowerblue;
+}
+/* Áp dụng cho các thẻ p bên trong thẻ div */
+div p {
+    color: crimson;
+}
+
+div div p {
+    font-weight: bold;
+}
+/* Áp dụng cho các thẻ p là con trực tiếp của body */
+body > p {
+    font-zize: 36px;
+}
+/*  Áp dụng cho thẻ p kế cạnh thẻ div */
+div + p {
+    text-decoration: underline;
+}
+
+div ~ p {
+    font-style: italic;
+}

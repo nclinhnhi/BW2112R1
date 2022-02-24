@@ -1,0 +1,15 @@
+h1:hover {
+    color:crimson;
+}
+
+input:focus {
+    background-color: darkolivegreen;
+}
+
+img:hover {
+    width: 50%;
+}
+
+img {
+    transition-duration: 2s;
+}

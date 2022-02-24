@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Tạo form đơn giản</title>
+</head>
+<body>
+    <table>
+        <form action="">
+            <th colspan="4">SỞ THÍCH CỦA BẠN</th>
+            <tr>
+                <td><label for="name">Họ và tên</label></td>
+                <td colspan="3"><input type="text" id="name" name="name"><br></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td colspan="3"><input type="text" id="email" name="email"><br></td>
+            </tr>
+            <tr>
+                <td rowspan="4">Sở thích</td>
+                <td><input type="checkbox" name="hobby1" value="sports">
+                    <label for="hobby1">Thể thao</label>
+                </td>
+                <td><input type="checkbox" name="hobby2" value="music">
+                    <label for="hobby2">Âm nhạc</label>
+                </td>
+                <td><input type="checkbox" name="hobby3" value="reading">
+                    <label for="hobby3">Đọc sách</label>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="hobby4" value="websurfing">
+                    <label for="hobby4">Lướt web</label>
+                </td>
+                <td><input type="checkbox" name="hobby5" value="gaming">
+                    <label for="hobby5">Chơi game</label>
+                </td>
+                <td><input type="checkbox" name="hobby6" value="movies">
+                    <label for="hobby6">Điện ảnh</label>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="hobby7" value="travel">
+                    <label for="hobby7">Du lịch</label>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="button">Gửi thông tin</button></td>
+                <td><button type="reset">Nhập lại</button></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
