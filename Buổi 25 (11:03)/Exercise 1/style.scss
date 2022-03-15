@@ -1,0 +1,56 @@
+$font-family: Tahoma;
+$fontsize: 16px;
+$primary_light: #44EDCC;
+$primary_dark: #007E64;
+$nav-height: 40px;
+$container_width: 650px;
+
+body {
+    font-family: $font-family;
+    font-size: $fontsize;
+}
+
+#container {
+        max-width: $container_width;
+        margin: auto;
+
+    nav {
+        ul {
+            list-style-type: none;
+            display: flex;
+            padding-left: 0;
+            flex-wrap: wrap;
+
+            li {
+                flex-grow: 1;
+                background-color: $primary_light;
+                line-height: $nav-height;
+                text-align: center;
+                border: $primary_dark 1px solid;
+                color: $primary_light;
+                transition: 2s;
+            }
+
+            li:hover {
+                background-color: $primary_dark;
+            }
+
+            li a{
+                color: $primary_dark;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                color: $primary_light;
+            }
+        }
+
+
+    }
+
+    main {
+        h1 {
+            color: $primary_dark;
+        }
+    }
+}

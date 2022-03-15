@@ -1,0 +1,44 @@
+// #8E0000 (Dark red)
+// #D8FFFF (Light aqua) 
+
+// #FFFFD7 (Light yellow)
+// #000094 (Dark blue)
+
+// #036100 (Green)
+
+$primary_color_xs: #8E0000;
+$secondary_color_xs: #D8FFFF;
+$font_size_xs: 14px;
+
+$primary_color_small: #000094;
+$secondary_color_small: #FFFFD7;
+$font_size_small: 18px;
+
+$primary_color_medium: #036100;
+$secondary_color_medium: #fff;
+$font_size_medium: 24px;
+
+@mixin layout ($primary, $secondary, $fontsize) {
+    #container {
+        background-color: $secondary;
+        border: $primary 2px solid;
+        font-size: $fontsize;
+
+        h1, p {
+            color: $primary;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    @include layout ($primary_color_xs, $secondary_color_xs, $font_size_xs);
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    @include layout ($primary_color_small, $secondary_color_small, $font_size_small);
+}
+
+@media screen and (min-width: 769px) {
+    @include layout ($primary_color_medium, $secondary_color_medium, $font_size_medium);
+}

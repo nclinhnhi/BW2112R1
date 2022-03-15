@@ -1,0 +1,50 @@
+body {
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+#container {
+  max-width: 650px;
+  margin: auto;
+}
+
+#container nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#container nav ul li {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #44EDCC;
+  line-height: 40px;
+  text-align: center;
+  border: #007E64 1px solid;
+  color: #44EDCC;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+#container nav ul li:hover {
+  background-color: #007E64;
+}
+
+#container nav ul li a {
+  color: #007E64;
+  text-decoration: none;
+}
+
+#container nav ul li a:hover {
+  color: #44EDCC;
+}
+
+#container main h1 {
+  color: #007E64;
+}
+/*# sourceMappingURL=style.css.map */
